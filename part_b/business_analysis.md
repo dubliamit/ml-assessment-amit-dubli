@@ -7,16 +7,16 @@ A fashion retailer operates 50 stores across urban, semi-urban, and rural locati
 (a) - Formulate this as a machine learning problem. State clearly: what is the target variable, what are the candidate input features, and what type of ML problem is this? Justify your choice of problem type.
 
 (Ans) - We can consider this as a Supervised machine learning Regression problem.
-        Target variable - items_sold (monthly sales volume per store)
-        Independent features
-        1. Store id
-        2. Store size
-        3. Location type (Urban / Semi Urban / Rural)
-        4. Promotion type
-        5. month
-        6. seasonality indicators
-        7. festival/holidays
-        8. footfall
-        9. customer demographic
-        10. Local competition density
+Target variable - items_sold (monthly sales volume per store)
+Independent features
+1. Store id
+2. Store size
+3. Location type (Urban / Semi Urban / Rural)
+4. Promotion type
+5. month
+6. seasonality indicators
+7. festival/holidays
+8. footfall
+9. customer demographic
+10. Local competition density
 Justification - We need to maximize the sales by predicting the expected outcome under different promotions.
