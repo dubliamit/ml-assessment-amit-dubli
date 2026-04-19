@@ -19,4 +19,7 @@ Independent features
 8. footfall
 9. customer demographic
 10. Local competition density
-Justification - We need to maximize the sales by predicting the expected outcome under different promotions.
+    
+Justification - We need to maximize the sales by predicting the expected outcome under different promotions using regression model. And the best promotion can be selected by choosing the one with highest predicted items sold.
+
+(b) - The company currently measures performance using total sales revenue. Explain why using items sold (sales volume) is a more reliable target variable for this problem. What broader principle does this illustrate about target variable selection in real-world ML projects?
