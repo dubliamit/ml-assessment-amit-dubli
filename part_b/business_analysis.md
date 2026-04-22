@@ -86,4 +86,10 @@ We can explain this to the marketing team as "In December demand is already high
 
 **(c)** - The trained model needs to generate recommendations at the start of every month for all 50 stores without being retrained each time. Describe the end-to-end deployment process: how you would save the model, how new monthly data would be prepared and fed in, and what monitoring you would put in place to detect when the model's performance has degraded and retraining is needed.
 
+**(Ans)** - To save model we can use pickle.
+At the start of each month: we have to collect data first like store attributes, planned promotions, calendar features and then can do some feature engineering
+using encoding (promotion type, location), scaling and date features. Once this is done we can load model to generate the predictions using 
+predictions = model.predict(new_data) and model = joblib.load("promotion_model.pkl") , then we can also add a schedular on monthly basis usings tools like Airflow etc.
+At the end we have to compare predicted and actual items sold by checking the MAE over time, if the error increases then we can say that the model is degrading and so retraining is needed.
+ 
 
